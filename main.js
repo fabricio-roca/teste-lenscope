@@ -11,21 +11,21 @@ let front = {
     resultadoHtml: document.getElementById("resultado"),
     }
 }
-// -- Convertendo os valors HTML para Js --//
-/*front.inputs.esEsquerdo = parseFloat(front.inputs.esEsquerdo);
-front.inputs.ciEsquerdo = parseFloat(front.inputs.ciEsquerdo);
-front.inputs.esDireito = parseFloat(front.inputs.esDireito);
-front.inputs.ciDireito = parseFloat(front.inputs.ciDireito);*/
-
 btnLentes = function () {
 // -- Fazendo o Calculo a Lentes prime --//
-if (front.inputs.esEsquerdo.value <= -3 && front.inputs.esEsquerdo.value >= -12 || front.inputs.direito.value <= -3 && front.inputs.direito.value >= -12){
-  if (front.inputs.ciEsquerdo.value <= -2){
+if (front.inputs.esEsquerdo.value <= -3 && front.inputs.esEsquerdo.value >= -12 || front.inputs.esDireito.value <= -3 && front.inputs.esDireito.value >= -12){
+  if (front.inputs.ciEsquerdo.value <= -2 && front.inputs.ciDireito.value <= -2){
   front.outputs.resultadoHtml.innerHTML = "A melhor opção para você é Lentes Prime!";
   console.log("lente prime");
   }
 }
-
+// -- Fazendo o Calculo a Lentes Vision --//
+if (front.inputs.esEsquerdo.value <= 0 && front.inputs.esEsquerdo.value >= -15 || front.inputs.esDireito.value <= 0 && front.inputs.esDireito.value >= -15){
+  if (front.inputs.ciEsquerdo.value <= -5 && front.inputs.ciDireito.value <= -5){
+  front.outputs.resultadoHtml.innerHTML = "A melhor opção para você é Lentes Vision!";
+  console.log("lente vision");
+  }
+}
 }
 
 
