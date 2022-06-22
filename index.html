@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <!-- PAGE INFO -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Processo Seletivo @Lenscope</title>
+
+    <!-- STYLES -->
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body class="gradient">
+    <div class="geral">
+      <div class="container">
+        <h1 class="page-title">Seu estilo, Sua Receita.</h1>
+        <p class="page-subtitle">
+          Descubra os tipos de lentes para o seu oculos de grau!
+        </p>
+      </div>
+      <div class="container">
+        <div class="oculosEsquerdo">
+            <p>Grau esferico do olho esquerdo:</p>
+            <input type="text" id="esfericoEsquerdo" class="txtNota" />
+            <p>grau cilindrico do olho esquerdo:</p>
+            <input type="text" id="cilindricoEsquerdo" class="txtNota" />
+        </div>
+        <div class="oculosDireito">
+            <p>Grau esferico do olho direito:</p>
+            <input type="text" id="esfericoDireito" class="txtNota" />
+            <p>grau cilindrico do olho direito:</p>
+            <input type="text" id="cilindricoDireito" class="txtNota" />
+        </div>
+        <br /><br />
+        <button type="submit" class="button" onclick="btnLentes()">Resultado</button>
+        <h2 id="resultado"></h2>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
